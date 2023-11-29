@@ -1,0 +1,117 @@
+:root {
+  --mainColor: #66009a;
+  --secondaryColor: #da02fc;
+}
+
+.hero-bg {
+  width: 100%;
+  min-height: 500px;
+  background: rgba(144, 27, 108, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.6px);
+  -webkit-backdrop-filter: blur(15.6px);
+  padding: 20px 20px 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.hero-bg::before,
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  z-index: -1;
+}
+.hero-bg::before {
+  background: url(../assets/images/pinkbubble.svg);
+  left: -100px;
+  top: 0;
+}
+.hero-bg::after {
+  background: url(../assets/images/purplebubble.svg);
+  right: 0;
+  bottom: -70px;
+}
+.hero-img {
+  max-width: 400px;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  filter: drop-shadow(10px 10px 30px #e7e7e7);
+  -webkit-filter: drop-shadow(10px 10px 30px #e7e7e7);
+}
+.hero-txt {
+  max-width: 75%;
+}
+.hero-txt h1 {
+  text-transform: uppercase;
+  font-size: 100px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  color: transparent;
+}
+.hero-txt p {
+  font-size: 24px;
+  margin-top: 20px;
+}
+.hero-btn {
+  border: 2px solid #000;
+  width: 200px;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .hero-txt h1 {
+    font-size: 75px;
+    margin-bottom: 80px;
+  }
+  .hero-img {
+    max-width: 60%;
+    top: 20px;
+    right: 20px;
+  }
+  .hero-txt {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .hero-txt h1 {
+    font-size: 50px;
+    margin-bottom: 100px;
+  }
+  .hero-img {
+    max-width: 60%;
+    top: 90px;
+    right: 15px;
+  }
+}
+@media (max-width: 350px) {
+  .hero-txt h1 {
+    font-size: 36px;
+    margin-bottom: 100px;
+  }
+  .hero-img {
+    top: 120px;
+    right: 15px;
+  }
+}

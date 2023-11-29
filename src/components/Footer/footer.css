@@ -1,0 +1,56 @@
+:root {
+  --mainColor: #66009a;
+  --secondaryColor: #da02fc;
+}
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0 0 0;
+}
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo {
+  max-width: 100px;
+}
+footer p {
+  border-bottom: 1px solid var(--mainColor);
+  width: fit-content;
+}
+.social svg {
+  font-size: 25px !important;
+}
+.social svg:hover {
+  color: var(--mainColor);
+}
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.links li {
+  padding: 8px 0;
+}
+
+.links li:hover {
+  color: var(--mainColor);
+}
+.social {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.copyright {
+  background-color: var(--mainColor);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}

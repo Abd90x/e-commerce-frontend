@@ -1,0 +1,72 @@
+:root {
+  --mainColor: #66009a;
+  --secondaryColor: #da02fc;
+}
+.anc-bar {
+  text-align: center;
+  background-color: var(--mainColor);
+  color: #fff;
+}
+.logo {
+  max-width: 75px;
+}
+.mainBtn {
+  background-color: var(--mainColor) !important;
+  color: #fff !important;
+}
+.mainBtn:hover {
+  background-color: var(--secondaryColor) !important;
+}
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+@media (max-width: 767px) {
+  .brand-logo {
+    order: 2 !important;
+  }
+  .cart-wrapper {
+    order: 3 !important;
+  }
+}
+.cart-wrapper {
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.icon-btn {
+  cursor: pointer;
+}
+.icon-btn:hover {
+  color: var(--mainColor);
+}
+.active {
+  color: var(--mainColor);
+}
+.nav-link.active {
+  color: var(--mainColor) !important;
+}
+.cart {
+  position: relative;
+}
+.cart > span {
+  position: absolute;
+  font-size: 10px;
+  background-color: var(--mainColor);
+  color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  top: 10px;
+  right: -2px;
+}

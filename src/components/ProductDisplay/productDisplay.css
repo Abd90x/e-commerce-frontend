@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --mainColor: #66009a;
+  --secondaryColor: #da02fc;
+  --gray: #f8f9fa;
+}
+
+.product-main-img img {
+  max-width: 100%;
+}
+.list-image {
+  margin-top: 50px;
+}
+
+.list-image img {
+  max-width: 100%;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product-vendor {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--mainColor);
+  font-weight: bold;
+  margin: 0 5px -10px;
+}
+.product-price .price {
+  font-weight: bold;
+  font-size: 28px;
+  color: var(--mainColor);
+}
+.product-price .old-price {
+  margin-left: 5px;
+  font-size: 20px;
+  text-decoration: line-through;
+  font-weight: bold;
+  color: #777;
+}
+.quantity-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 100px;
+  overflow: hidden;
+}
+.quantity-selector .qty {
+  font-size: 18px;
+}
+.quantity-selector .plus,
+.quantity-selector .minus {
+  background-color: var(--mainColor);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 0;
+}
+.product-description {
+  color: #777;
+}
+.product-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.product-category span,
+.product-tags span {
+  text-transform: capitalize;
+  color: #fff;
+  background-color: var(--mainColor);
+  padding: 4px 8px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  font-size: 12px;
+}
+.accordion-header {
+  padding: 0;
+}
+.accordion-item {
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -ms-border-radius: 26px;
+  -o-border-radius: 26px;
+}
+.accordion-header svg {
+  margin: -3px 5px 0 0;
+}
+.accordion {
+  --bs-accordion-active-bg: #f8f9fa;
+  --bs-accordion-active-color: #000;
+  --bs-accordion-btn-focus-box-shadow: 0;
+}

@@ -1,0 +1,45 @@
+.form-box {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 50px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-box button {
+  display: block;
+  margin: auto;
+  width: 250px;
+}
+.password-input {
+  position: relative;
+}
+.form-box p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-box p button {
+  color: #66009a !important;
+  font-weight: 600;
+  width: fit-content;
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+.password-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+}
+.password-icon:hover {
+  color: #66009a;
+}

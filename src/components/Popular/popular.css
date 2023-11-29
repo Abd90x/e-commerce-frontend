@@ -1,0 +1,18 @@
+:root {
+  --mainColor: #66009a;
+  --secondaryColor: #da02fc;
+}
+.collectionTitle {
+  position: relative;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+.collectionTitle::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background-color: var(--mainColor);
+  left: 0;
+  bottom: 0;
+}

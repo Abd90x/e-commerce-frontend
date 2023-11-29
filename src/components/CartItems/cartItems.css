@@ -1,0 +1,121 @@
+:root {
+  --mainColor: #66009a;
+  --secondaryColor: #da02fc;
+}
+.cart-top {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+.cart-top * {
+  margin: 0;
+}
+.cart-top-title {
+  flex-grow: 1;
+}
+.cart-items-format * {
+  margin: 0;
+}
+.cart-items-format {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+}
+.cart-items-format .cart-product-image {
+  width: 75px;
+}
+.cart-items-format img {
+  max-width: 100%;
+}
+.cart-qty {
+  background-color: var(--mainColor);
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+hr {
+  margin: 10px 0;
+}
+.cart-items-format button {
+  color: #000;
+}
+.cart-items-format button:hover {
+  color: var(--mainColor);
+}
+.cart-bottom {
+  margin-top: 30px;
+}
+.cart-total p {
+  margin: 0 10px 0 0;
+}
+.checkout-btn {
+  border-radius: 26px;
+  width: 100%;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -ms-border-radius: 26px;
+  -o-border-radius: 26px;
+  margin-top: 20px;
+}
+.promo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promo-box button {
+  height: 58px;
+  border-radius: 0 26px 26px 0;
+  -webkit-border-radius: 0 26px 26px 0;
+  -moz-border-radius: 0 26px 26px 0;
+  -ms-border-radius: 0 26px 26px 0;
+  -o-border-radius: 0 26px 26px 0;
+}
+.promo-box input {
+  border-radius: 26px 0 0 26px;
+  -webkit-border-radius: 26px 0 0 26px;
+  -moz-border-radius: 26px 0 0 26px;
+  -ms-border-radius: 26px 0 0 26px;
+  -o-border-radius: 26px 0 0 26px;
+}
+.promo-box input:focus {
+  box-shadow: unset;
+  border-color: #66009a;
+}
+.cart-promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button[disabled] {
+  cursor: not-allowed;
+}
+.valid-promo {
+  margin-top: 10px;
+  color: red;
+}
+.cart-empty {
+  margin: auto;
+  text-align: center;
+}
+.cart-empty img {
+  max-width: 100%;
+}
+.cart-empty h1 {
+  font-size: 38px;
+}
+.empty-cartBtn {
+  width: 250px;
+}

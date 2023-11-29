@@ -1,0 +1,54 @@
+:root {
+  --mainColor: #66009a;
+  --secondaryColor: #da02fc;
+}
+
+.offers-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+.offer-txt h1 {
+  font-size: 85px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  color: transparent;
+  margin: 0;
+  text-transform: uppercase;
+}
+.offer-txt h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.offer-txt p {
+  font-size: 25px;
+}
+.offer-txt button {
+  border: 0;
+  width: 150px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .offer-txt {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .offer-txt h1 {
+    font-size: 45px;
+  }
+  .offer-txt h2 {
+    font-size: 30px;
+  }
+  .offer-txt p {
+    font-size: 20px;
+  }
+}
+.offer-img img {
+  max-width: 100%;
+}

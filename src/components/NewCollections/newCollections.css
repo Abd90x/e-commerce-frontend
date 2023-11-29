@@ -1,0 +1,42 @@
+:root {
+  --mainColor: #66009a;
+  --secondaryColor: #da02fc;
+}
+
+.collection-card img {
+  max-width: 100%;
+}
+.collection-card a {
+  display: flex;
+  align-items: center;
+}
+
+.collection-card a:hover {
+  color: var(--mainColor);
+}
+.collection-card a svg {
+  margin-left: 5px;
+  margin-top: -4px;
+  position: relative;
+}
+.collection-card a:hover svg {
+  animation: move-to-right 1s ease-in-out infinite;
+  -webkit-animation: move-to-right 1s ease-in-out infinite;
+  color: var(--mainColor);
+}
+@keyframes move-to-right {
+  from {
+    transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
+  }
+  to {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
